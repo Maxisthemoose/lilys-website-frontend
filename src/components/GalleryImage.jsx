@@ -33,7 +33,7 @@ function GalleryImage(props) {
           )
         }
       </Popup>
-      <h3 className="name">{image_name}</h3>
+      <h1 className="name">{image_name}</h1>
     </div>
   )
 

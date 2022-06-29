@@ -1,0 +1,32 @@
+.item {
+  background-color: var(--light-void-2);
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 10px;
+}
+
+.item > h3 {
+  margin: 3px;
+  margin-bottom: 10px;
+}
+
+.item > button {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.25rem;
+  border-radius: 7px;
+  background-color: var(--fuschia);
+  border: 1px solid white;
+  color: var(--stark);
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.item > button:active {
+  background-color: var(--jewel);
+  border: 1px solid var(--stark);
+  transform: translateY(2px);
+}

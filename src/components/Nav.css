@@ -42,10 +42,8 @@
 }
 
 .toCart > h3 {
-
   margin: 0;
   margin-left: 27px;
-  /* text-align: center; */
 }
 
 .toCart-svg {
@@ -53,8 +51,6 @@
   position: absolute;
   left: 20px;
   filter: invert(100%) sepia(0%) saturate(7493%) hue-rotate(126deg) brightness(101%) contrast(100%);
-  /* margin: 0; */
-  /* width: 40px; */
 }
 
 @keyframes show {

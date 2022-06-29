@@ -2,6 +2,7 @@
 .gallery-image {
   width: fit-content;
   height: fit-content;
+  font-family: 'Courier New', Courier, monospace
 }
 
 .gal_img {
@@ -17,6 +18,7 @@
   background-color: var(--light-void-1);
   border-radius: 20px;
   border: 3px solid var(--void);
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .popup-body > .close {
@@ -37,7 +39,7 @@
   
   .popup-body {
     width: 300px;
-    height: 500px;
+    height: 100%;
   }
   .gal_img {
     width: 300px;
@@ -51,6 +53,7 @@
 
   .name {
     margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   .popup-body > img {
@@ -77,7 +80,7 @@
   
   .popup-body {
     width: 1000px;
-    height: 700px;
+    height: 100%;
   }
   .gal_img {
     width: 100%;

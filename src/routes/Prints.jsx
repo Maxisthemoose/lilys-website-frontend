@@ -3,8 +3,8 @@ import { useEffect } from "react";
 import { useState } from "react";
 import getProducts from "../api/getProducts";
 import Item from "../components/Item";
+import Loading from "../components/Loading";
 import "./Prints.css";
-// import products from "../Products.json";
 
 const Prints = (props) => {
   props.setNav(true);
@@ -34,10 +34,7 @@ const Prints = (props) => {
 
       {
         loading &&
-        <div className="spinner-container">
-            <h1>Loading...</h1>
-            <div className="spinner-prints" />
-        </div>
+        <Loading />
       }
 
       <h1>Prints</h1>

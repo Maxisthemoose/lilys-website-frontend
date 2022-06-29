@@ -1,5 +1,5 @@
 const axios = require("axios").default;
-const baseUrl = "https://glacial-inlet-58614.herokuapp.com";
+const { baseApiUri } = require("./baseUrl");
 
 export async function sendEmail(data) {
 
@@ -8,7 +8,7 @@ export async function sendEmail(data) {
     obj[data[i].name] = data[i].value;
   }
 
-  await axios.post(`${baseUrl}/email`, obj, {
+  await axios.post(`${baseApiUri}/email`, obj, {
     headers: {
       "Content-Type": "application/json",
     }

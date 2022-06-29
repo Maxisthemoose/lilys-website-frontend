@@ -1,4 +1,6 @@
 import React from "react";
+import GalleryImage from "./GalleryImage";
+import "./Item.css";
 
 function Item(props) {
   const image = props.item.image;
@@ -8,12 +10,12 @@ function Item(props) {
   const quantity = props.item.quantity;
 
   const onAdd = props.onAdd;
-
   return (
     <div className="item">
-      <img src={image} alt={name} />
-      <h1>{name}</h1>
-      <h3>{price}</h3>
+      {/* <img src={require("../images/placeholder.jpg")} alt={name} /> */}
+      <GalleryImage image={require("../images/placeholder.jpg")} name={name} description={description} />
+      {/* <h1>{name}</h1> */}
+      <h3>{`$${price.toPrecision(4)}`}</h3>
       <h3>{quantity}</h3>
       <h3>{description}</h3>
       <button onClick={() => onAdd({
