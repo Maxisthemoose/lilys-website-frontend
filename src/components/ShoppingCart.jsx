@@ -13,10 +13,14 @@ function ShoppingCart(props) {
   }
 
   return (
-    <a className="cart" href="/cart" draggable="false" style={style}>
-      <img className="cartSvg" src={cartImage} draggable="false" alt="" />
-      <h5 className="counter">{cart.length}</h5>
-    </a>
+    <div>
+      { cart.length > 0 &&
+      < a className = "cart" href = "/cart" draggable = "false" style = { style } >
+        <img className="cartSvg" src={cartImage} draggable="false" alt="" />
+        <h5 className="counter">{cart.length}</h5>
+      </a >
+      }
+    </div>
   )
 
 }

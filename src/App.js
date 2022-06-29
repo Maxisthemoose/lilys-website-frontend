@@ -47,8 +47,8 @@ function App() {
           <Route path="/" element={<Home setNav={setShowNav} />} />
           <Route path="/gallery" element={<Gallery setNav={setShowNav} />} />
           <Route path="/prints" element={<Prints setNav={setShowNav} onAdd={onAdd} cart={cart} />} />
-          <Route path="/clothing" element={<Clothing setNav={setShowNav} />} />
-          <Route path="/stickers" element={<Stickers setNav={setShowNav} />} />
+          <Route path="/clothing" element={<Clothing setNav={setShowNav} onAdd={onAdd} cart={cart} />} />
+          <Route path="/stickers" element={<Stickers setNav={setShowNav} onAdd={onAdd} cart={cart} />} />
           <Route path="/shows" element={<Shows setNav={setShowNav} />} />
           <Route path="/about" element={<About setNav={setShowNav} />} />
           <Route path="/cart" element={<Cart cart={cart} setCart={setCart} setNav={setShowNav} />} />

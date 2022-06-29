@@ -58,7 +58,7 @@
     border-style: solid;
     border-width: 5px;
     border-radius: 50%;
-    animation: popIn 0.8s cubic-bezier(.14,.79,.75,1.84) forwards;
+    animation: popIn 0.8s cubic-bezier(.35,2.02,.99,1) forwards;
   }
 
   @keyframes popIn {

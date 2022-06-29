@@ -20,6 +20,7 @@ const Prints = (props) => {
         const res = (await getProducts()).data.prints;
         setProducts(res);
         setLoading(false);
+        document.getElementById("menu").checked = false;
       } catch (err) {
         console.log(err);
         setLoading(false);

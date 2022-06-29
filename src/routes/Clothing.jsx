@@ -1,10 +1,58 @@
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
+import getProducts from "../api/getProducts";
+import Item from "../components/Item";
+import Loading from "../components/Loading";
+import "./Clothing.css";
 
 const Clothing = (props) => {
   props.setNav(true);
+
+  const [products, setProducts] = useState([]);
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        setLoading(true);
+        const res = (await getProducts()).data.clothing;
+        setProducts(res);
+        setLoading(false);
+        document.getElementById("menu").checked = false;
+      } catch (err) {
+        console.log(err);
+        setLoading(false);
+        setError(true);
+      }
+    }
+    fetchData();
+  }, []);
   return (
-    <div>
+    <div className="main-container-clothing">
+
+      {
+        loading &&
+        <Loading />
+      }
+
       <h1>Clothing</h1>
+
+      <div className="clothing-container">
+        {error && <div className="error">Something went wrong. Please try again later</div>}
+        {!error &&
+          products.map(v => (
+            <Item
+              key={v.name}
+              item={v}
+              onAdd={props.onAdd}
+              cart={props.cart}
+            />
+          ))
+        }
+      </div>
+
     </div>
   );
 }
