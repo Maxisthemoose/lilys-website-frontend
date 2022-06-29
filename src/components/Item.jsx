@@ -14,7 +14,6 @@ function Item(props) {
     <div className="item">
       <GalleryImage image={require("../images/placeholder.jpg")} name={name} description={description} />
       <h3>{`$${price}`}</h3>
-      <h3>{quantity}</h3>
       <h3>{description}</h3>
       <button onClick={() => onAdd({
         name, price, image,
