@@ -1,0 +1,45 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.gallery > h1 {
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-size: 5rem;
+  margin: 0;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 1px var(--jewel);
+  /* background-color: maroon; */
+  width: 100%;
+  /* height: 100vh; */
+}
+
+@media screen and (max-width: 10000px) {
+  .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--light-void-2);
+    width: 350px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .image-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: var(--light-void-2);
+    border-radius: 20px;
+    width: 80%;
+    height: fit-content;
+  }
+
+
+}
+
+
