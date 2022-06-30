@@ -16,7 +16,7 @@ function Item(props) {
       <h3>{`$${price}`}</h3>
       <h3>{description}</h3>
       <button onClick={() => onAdd({
-        name, price, image,
+        name, image,
       })}>Add to Cart</button>
     </div>
   )

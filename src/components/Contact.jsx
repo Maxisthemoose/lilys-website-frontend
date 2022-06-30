@@ -5,7 +5,6 @@ import self from "../images/SelfPortrait.jpg";
 import { sendEmail as apiSendEmail } from "../api/sendEmail";
 import { useState } from "react";
 
-
 const Contact = (props) => {
 
   const [loading, setLoading] = useState(false);

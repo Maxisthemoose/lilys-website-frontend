@@ -1,0 +1,10 @@
+@media screen and (max-width: 10000px){
+  .cart-container {
+    /* width: 90%; */
+    /* height: 90%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+  }
+}
