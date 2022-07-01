@@ -51,7 +51,7 @@ function App() {
           <Route path="/stickers" element={<Stickers setNav={setShowNav} onAdd={onAdd} cart={cart} />} />
           <Route path="/shows" element={<Shows setNav={setShowNav} />} />
           <Route path="/about" element={<About setNav={setShowNav} />} />
-          <Route path="/cart" element={<Cart cart={cart} setCart={setCart} setNav={setShowNav} />} />
+          <Route path="/cart" element={<Cart cart={cart} setCart={setCart} setNav={setShowNav} saveCart={saveCart} />} />
         </Routes>
         
         <ShoppingCart cart={cart} setCart={setCart} />
